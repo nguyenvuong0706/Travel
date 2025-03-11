@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>ADM - Total Booked</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/tours.css" />
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <a style="color: black;" href="#"> <i class="fa-solid fa-person-walking-luggage"></i> MeapsTravel. </a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="">
+          <i class="bx bx-user"></i>
+          <span class="links_name">Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class="bx bx-grid-alt"></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="tours.html">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Tours</span>
+        </a>
+      </li>
+      <li>
+        <a href="events.html" class="active">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Events</span>
+        </a>
+      </li>
+      <li>
+        <a href="maps.html">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Maps</span>
+        </a>
+      </li>
+      <li>
+        <a href="blogs.html">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Blogs</span>
+        </a>
+      </li>
+      <li class="log_out">
+        <a href="#">
+          <i class="bx bx-log-out"></i>
+          <span class="links_name">Log out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+    <section class="home-section">
+        <nav>
+          <div class="sidebar-button">
+            <i class="bx bx-menu sidebarBtn"></i>
+            <span class="dashboard">Dashboard</span>
+          </div>
+          <div class="profile-details">
+            <img src="images/profile.jpg" alt="" />
+            <span class="admin_name">Admin name</span>
+            <i class="bx bx-chevron-down"></i>
+          </div>
+        </nav>
+      <!-- table -->
+      <main class="table">
+        <div class="body-content flex flex-column">
+
+          <main class="flex flex-column gap-3 grow">
+            <section class="flex gap-2 items-center justify-between">
+              <div id="bulkActions" class="bulk-actions hidden items-center">
+                <i class="icon">
+                  <i class="bx bx-trash"></i>
+                </i>
+        
+                <small id="labelItemsSelected">0 items selected</small>
+        
+                <i class="icon">
+                  <i class="bx bx-x"></i>
+                </i>
+              </div>
+        
+              <h1 id="title" class="leading-none">Danh sách Events<br>
+                <span>Đang có 3,123 voucher giảm giá.</span>
+              </h1>
+        
+              <div class="flex items-center menu">
+                <input type="text" placeholder="search.." class="search-bar">
+                <button class="button link action">
+                  <i class="bx bx-filter-alt filter-data"></i>
+                  <div class="action-menu filter">
+                    <ul>
+                        <li>
+                          <div class="select-box">
+                            <select>
+                              <option hidden>Danh sách</option>
+                              <option>Trạng thái</option>
+                              <option>Hoạt động</option>
+                            </select>
+                          </div>
+                        </li>
+                        <li class="duration">
+                          <div class="option-1">
+                            <input type="radio" id="weekly" name="duration" value="weekly">
+                            <label for="weekly">Theo Tuần</label>
+                          </div>
+                          <div class="option-2">
+                            <input type="radio" id="monthly" name="duration" value="monthly">
+                            <label for="monthly">Theo Tháng</label>
+                          </div>
+                        </li>
+                    </ul>
+                  </div>
+                </button>
+              </div>
+            </section>
+        
+            <section class="flex flex-column gap-2">
+              <table>
+                <tr class="no-hover">
+                  <th></th>
+                  <th><span>STT</span></th>
+                  <th><span>Mã giảm giá</span></th>
+                  <th><span>Tiêu đề</span></th>
+                  <th><span>Ngày</span></th>
+                  <th><span>Giá trị giảm</span></th>
+                  <th><span>Trạng thái</span></th>
+                  <th><span>Hành động</span></th>
+                </tr>
+        
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>1</td>
+                  <td>SF96UdZL</td>
+                  <td>Tri ân khách hàng mới</td>
+                  <td>1/6/2023 - 1/10/2023</td>
+                  <td>10%</td>
+                  <td>Hết hiệu lực</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu table">
+                        <ul>
+                            <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                            <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                            <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+        
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>2</td>
+                  <td>KQ36kiJV</td>
+                  <td>Tri ân khách hàng mới</td>
+                  <td>1/6/2023 - 1/10/2023</td>
+                  <td>20%</td>
+                  <td>Hết hiệu lực</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu">
+                        <ul>
+                          <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                          <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                          <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+        
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>3</td>
+                  <td>WA72xPFG</td>
+                  <td>Tri ân khách hàng mới</td>
+                  <td>1/6/2023 - 1/10/2023</td>
+                  <td>15%</td>
+                  <td>Hết hiệu lực</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu">
+                        <ul>
+                          <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                          <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                          <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+        
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>4</td>
+                  <td>YL93wiKK</td>
+                  <td>Chào mừng Quốc khánh 2-9</td>
+                  <td>29/8/2023 - 4/9/2023</td>
+                  <td>10%</td>
+                  <td>Đang hiệu lực</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu">
+                        <ul>
+                          <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                          <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                          <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+        
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>5</td>
+                  <td>PF46j63J</td>
+                  <td>Chào mừng Quốc khách 2-9</td>
+                  <td>29/8/2023 - 4/9/2023</td>
+                  <td>10%</td>
+                  <td>Đang hiệu lực</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu">
+                        <ul>
+                          <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                          <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                          <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>6</td>
+                  <td>HL48=3AF</td>
+                  <td>Chào mừng Quốc khánh 2-9</td>
+                  <td>29/8/2023 - 4/9/2023</td>
+                  <td>12%</td>
+                  <td>Đang hiệu lực</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu">
+                        <ul>
+                          <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                          <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                          <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>7</td>
+                  <td>KX54uyFJ</td>
+                  <td>Du lịch trải nghiệm</td>
+                  <td>4/7/2023 - 8/9/2023</td>
+                  <td>9%</td>
+                  <td>Đang hiệu lực</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu">
+                        <ul>
+                          <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                          <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                          <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>8</td>
+                  <td>HY64XtWJ</td>
+                  <td>Merry Christmas</td>
+                  <td>20/12/2023 - 30/12/2023</td>
+                  <td>14%</td>
+                  <td>Chờ hiệu lực</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu">
+                        <ul>
+                          <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                          <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                          <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>9</td>
+                  <td>ZQ66uiML</td>
+                  <td>Tri ân khách hàng</td>
+                  <td>7/6/2023 - 21/11/2023</td>
+                  <td>10%</td>
+                  <td>Chờ hiệu lực</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu">
+                        <ul>
+                          <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                          <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                          <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+        
+              </table>
+        
+              <section class="flex items-center justify-between">
+                <small class="muted">1-9 / 123 items</small>
+        
+                <div class="flex gap-2 items-center">
+                  <div class="flex gap-05 items-center">
+                    <input class="input number small" readonly type="number" value="1" />
+                    <small class="muted">/</small>
+                    <small class="muted">13 pages</small>
+                  </div>
+        
+                  <div class="flex gap-05 items-center">
+                    <button class="button icon link">
+                      <i class="bx bx-chevron-left"></i>
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+
+                  </div>
+                </div>
+              </section>
+            </section>
+          </main>
+        </div>
+      </main>
+    </section>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

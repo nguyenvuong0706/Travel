@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>ADM - Activity Packages</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/maps.css" />
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <a style="color: black;" href="#"> <i class="fa-solid fa-person-walking-luggage"></i> MeapsTravel. </a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="">
+          <i class="bx bx-user"></i>
+          <span class="links_name">Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class="bx bx-grid-alt"></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+      <li>
+        <a href="tours.html">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Tours</span>
+        </a>
+      </li>
+      <li>
+        <a href="events.html">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Events</span>
+        </a>
+      </li>
+      <li>
+        <a href="maps.html" class="active">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Maps</span>
+        </a>
+      </li>
+      <li>
+        <a href="blogs.html">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Blogs</span>
+        </a>
+      </li>
+      <li class="log_out">
+        <a href="#">
+          <i class="bx bx-log-out"></i>
+          <span class="links_name">Log out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+    <section class="home-section">
+        <nav>
+          <div class="sidebar-button">
+            <i class="bx bx-menu sidebarBtn"></i>
+            <span class="dashboard">Dashboard</span>
+          </div>
+          <div class="profile-details">
+            <img src="images/profile.jpg" alt="" />
+            <span class="admin_name">Admin name</span>
+            <i class="bx bx-chevron-down"></i>
+          </div>
+        </nav>
+      <!-- table -->
+      <main class="table">
+        <div class="body-content flex flex-column">
+
+          <main class="flex flex-column gap-3 grow">
+            <section class="flex gap-2 items-center justify-between">
+              <div id="bulkActions" class="bulk-actions hidden items-center">
+                <i class="icon">
+                  <i class="bx bx-trash"></i>
+                </i>
+        
+                <small id="labelItemsSelected">0 items selected</small>
+        
+                <i class="icon">
+                  <i class="bx bx-x"></i>
+                </i>
+              </div>
+        
+              <h1 id="title" class="leading-none">Danh sách Map<br>
+                <span>Hiện đang có 123 địa điểm được thêm vào.</span>
+              </h1>
+        
+              <div class="flex items-center menu">
+                <input type="text" placeholder="search.." class="search-bar">
+                <button class="button icon link">
+                  <i class="bx bx-plus add-data"></i>
+                </button>
+              </div>
+            </section>
+        
+            <section class="flex flex-column gap-2">
+              <table>
+                <tr class="no-hover">
+                  <th></th>
+                  <th><span>STT</span></th>
+                  <th><span>Hình ảnh</span></th>
+                  <th><span>Địa điểm</span></th>
+                  <th><span>Tỉnh thành</span></th>
+                  <th><span>Giá tiền</span></th>
+                  <th><span>Trạng thái</span></th>
+                  <th><span>Hành động</span></th>
+                </tr>
+        
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>1</td>
+                  <td class="thumbnail">
+                    <img src="images/van-mieu-quoc-tu-giam-01_1682005307.jpg" alt="">
+                  </td>
+                  <td>Văn Miếu - Quốc Tử Giám</td>
+                  <td>Hà Nội</td>
+                  <td class="items-center">30.000đ</td>
+                  <td class="items-center">
+                    <label class="switch">
+                      <input type="checkbox" checked>
+                      <span class="slider"></span>
+                    </label>
+                  </td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu table">
+                        <ul>
+                            <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                            <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                            <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+        
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>2</td>
+                  <td class="thumbnail">
+                    <img src="images/lang-chu-tich.jpg" alt="">
+                  </td>
+                  <td>Lăng Chủ tịch Hồ Chí Minh</td>
+                  <td>Hà Nội</td>
+                  <td>Miễn phí</td>
+                  <td class="items-center">
+                    <label class="switch">
+                      <input type="checkbox" checked>
+                      <span class="slider"></span>
+                    </label>
+                  </td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu table">
+                        <ul>
+                            <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                            <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                            <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>3</td>
+                  <td class="thumbnail">
+                    <img src="images/beryl-palace-hanoi-hotel_lobby-3_optimized-scaled.jpg" alt="">
+                  </td>
+                  <td>Beryl Palace Hotel</td>
+                  <td>Hà Nội</td>
+                  <td>1.629.440đ</td>
+                  <td class="items-center">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label>
+                  </td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu table">
+                        <ul>
+                            <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                            <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                            <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>4</td>
+                  <td class="thumbnail">
+                    <img src="images/le-beryl.jpg" alt="">
+                  </td>
+                  <td>Le Beryl Hotel</td>
+                  <td>Hà Nội</td>
+                  <td>1.316.700đ</td>
+                  <td class="items-center">
+                    <label class="switch">
+                      <input type="checkbox" checked>
+                      <span class="slider"></span>
+                    </label>
+                  </td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu table">
+                        <ul>
+                            <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                            <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                            <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>5</td>
+                  <td class="thumbnail">
+                    <img src="images/golden-rose.jpg" alt="">
+                  </td>
+                  <td>Golden Rose Hotel</td>
+                  <td>Đà Nẵng</td>
+                  <td>350.000đ</td>
+                  <td class="items-center">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label>
+                  </td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu table">
+                        <ul>
+                            <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                            <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                            <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>6</td>
+                  <td class="thumbnail">
+                    <img src="images/cherry-hotel.jpg" alt="">
+                  </td>
+                  <td>Cherry Hotel & Apartment</td>
+                  <td>Đà Nẵng</td>
+                  <td>252.000đ</td>
+                  <td class="items-center">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label>
+                  </td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu table">
+                        <ul>
+                            <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                            <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                            <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>6</td>
+                  <td class="thumbnail">
+                    <img src="images/moonstone-hotel.jpg" alt="">
+                  </td>
+                  <td>TTR Moonstone Apart Hotel</td>
+                  <td>Đà Lạt</td>
+                  <td>450.000đ</td>
+                  <td class="items-center">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label>
+                  </td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu table">
+                        <ul>
+                            <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                            <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                            <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>8</td>
+                  <td class="thumbnail">
+                    <img src="images/bazan-hotel.jpg" alt="">
+                  </td>
+                  <td>Bazan Hotel</td>
+                  <td>Đà Lạt</td>
+                  <td>700.000đ</td>
+                  <td class="items-center">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label>
+                  </td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu table">
+                        <ul>
+                            <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                            <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                            <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+        
+              </table>
+        
+              <section class="flex items-center justify-between">
+                <small class="muted">1-8 / 123 items</small>
+        
+                <div class="flex gap-2 items-center">
+                  <div class="flex gap-05 items-center">
+                    <input class="input number small" readonly type="number" value="1" />
+                    <small class="muted">/</small>
+                    <small class="muted">13 pages</small>
+                  </div>
+        
+                  <div class="flex gap-05 items-center">
+                    <button class="button icon link">
+                      <i class="bx bx-chevron-left"></i>
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+
+                  </div>
+                </div>
+              </section>
+            </section>
+          </main>
+        </div>
+      </main>
+      </section>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

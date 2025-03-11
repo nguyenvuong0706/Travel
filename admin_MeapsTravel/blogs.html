@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>ADM - Inbox</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/blogs.css" />
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <a style="color: black;" href="#"> <i class="fa-solid fa-person-walking-luggage"></i> MeapsTravel. </a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="">
+          <i class="bx bx-user"></i>
+          <span class="links_name">Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class="bx bx-grid-alt"></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="tours.html">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Tours</span>
+        </a>
+      </li>
+      <li>
+        <a href="events.html">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Events</span>
+        </a>
+      </li>
+      <li>
+        <a href="maps.html">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Maps</span>
+        </a>
+      </li>
+      <li>
+        <a href="blogs.html" class="active">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Blogs</span>
+        </a>
+      </li>
+      <li class="log_out">
+        <a href="#">
+          <i class="bx bx-log-out"></i>
+          <span class="links_name">Log out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+    <section class="home-section">
+        <nav>
+          <div class="sidebar-button">
+            <i class="bx bx-menu sidebarBtn"></i>
+            <span class="dashboard">Dashboard</span>
+          </div>
+          <div class="profile-details">
+            <img src="images/profile.jpg" alt="" />
+            <span class="admin_name">Admin name</span>
+            <i class="bx bx-chevron-down"></i>
+          </div>
+        </nav>
+        <section class="wrapper">
+            <div class="container">
+                <div class="header-menu">
+                    <input type="text" placeholder="search.." class="search-bar">
+                    <ul>
+                        <li class="active">Comment</li>
+                        <li>Stared</li>
+                        <li>Trash</li>
+                        <li>All</li>
+                    </ul>
+                </div>
+
+                <div class="profil-top">
+                    <div class="content-top">
+                        <img src="images/profile.jpg" alt="">
+                        <div class="sender-profil">
+                            <p class="sender-name">Nguyen Van A</p>
+                            <small class="muted">username@gmail.com</small>
+                        </div>
+                    </div>
+                    <div class="content-top action">
+                        <small class="time-top">05:45 PM</small>
+                        <ul>
+                            <li><i class="bx bx-star icon"></i></li>
+                            <li><i class="bx bx-trash icon"></i></li>
+                            <li><i class='bx bx-dots-vertical-rounded icon'></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="inbox-sidebar">
+                    <div class="inbox-mail">
+                        <div class="mail-list mail-active">
+                            <div class="mail-content">
+                                <p class="sender-name">Trần Trung A</p>
+                                <small class="muted prev-message">Khung cảnh đẹp, vị trí đẹp, đáng để trải nghiệm</small>
+                            </div>
+                            <i class="bx bx-star icon"></i>
+                        </div>
+                        <div class="mail-list">
+                            <div class="mail-content">
+                                <p class="sender-name">Nguyễn Thị C</p>
+                                <small class="muted prev-message">Khung cảnh đẹp, vị trí đẹp, đáng để trải nghiệm</small>
+                            </div>
+                            <i class="bx bx-star icon"></i>
+                        </div>
+                        <div class="mail-list">
+                            <div class="mail-content">
+                                <p class="sender-name">Hoàng Văn A</p>
+                                <small class="muted prev-message">Khung cảnh đẹp, vị trí đẹp, đáng để trải nghiệm</small>
+                            </div>
+                            <i class="bx bx-star icon"></i>
+                        </div>
+                        <div class="mail-list">
+                            <div class="mail-content">
+                                <p class="sender-name">Bùi Quốc B</p>
+                                <small class="muted prev-message">Khung cảnh đẹp, vị trí đẹp, đáng để trải nghiệm</small>
+                            </div>
+                            <i class="bx bx-star icon"></i>
+                        </div>
+                        <div class="mail-list">
+                            <div class="mail-content">
+                                <p class="sender-name">Hoàng Văn D</p>
+                                <small class="muted prev-message">Khung cảnh đẹp, vị trí đẹp, đáng để trải nghiệm</small>
+                            </div>
+                            <i class="bx bx-star icon"></i>
+                        </div>
+                        <div class="mail-list">
+                            <div class="mail-content">
+                                <p class="sender-name">Nguyễn Hoàng A</p>
+                                <small class="muted prev-message">Khung cảnh đẹp, vị trí đẹp, đáng để trải nghiệm</small>
+                            </div>
+                            <i class="bx bx-star icon"></i>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="inbox-main">
+                  <div class="main-message">
+                    <h3>Đồi huyền bí</h3>
+                    <small class="muted"> Sun, December 23th 2023 <br>
+                      Đỉnh Ba Đèo có khu vườn Nhật được nối liền bởi một cây cầu bắc qua thung lũng xanh, có Bảo Linh Thông Tự với tầm nhìn 
+                      ôm trọn lấy vịnh biển Hạ Long mộng mơ. Nhờ vị trí đắc địa cùng sự đầu tư bài bản mà nơi đây đã trở thành điểm sáng du lịch của Hạ Long nói riêng và Quảng Ninh nói chung....
+                    </small>
+                  </div>
+                  <div class="main-message">
+                    <small class="reply-date">23 Decembe2023</small><br>
+                    <h3>Công viên rồng</h3>
+                    <small class="muted"> Sun, December 23th 2023 <br>
+                      Công viên Rồng Quảng Ninh (Hạ Long) hay Dragon Park Halong, là một công viên giải trí nằm ở thành phố biển Hạ Long, Quảng Ninh. Công viên này thuộc Sun World Park và là 
+                      công viên chủ đề duy nhất tại Việt Nam với 32 trò chơi hiện đại hàng đầu thế giới....
+                    </small>
+                  </div>
+                  <div class="reply-message">
+                    <small class="reply-date">23 Decembe 2023</small><br>
+                    <p class="sender-name">Hoàng Văn A</p>
+                    <small class="muted"> Tuyệt vời!!! <br>Khung cảnh đẹp, vị trí đẹp, đáng để trải nghiệm</small>
+                  </div>
+                  <div class="reply-message">
+                    <small class="reply-date">24 Decembe 2023</small><br>
+                    <p class="sender-name">Trần Trung A</p>
+                    <small class="muted"> Khung cảnh đẹp, vị trí đẹp, đáng để trải nghiệm</small>
+                  </div>
+
+                  <div class="editor-message">
+                    <textarea name="content" id="editor"></textarea>
+                  </div>
+                  
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+          <small>© 2023 Admtourntravel. All rights reserved</small>
+        </div>
+    </section>
+
+    
+
+    <script src="script.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js"></script>
+    <script>
+      ClassicEditor
+          .create( document.querySelector( '#editor' ) )
+          .catch( error => {
+              console.error( error );
+          } );
+    </script>
+
+</body>
+</html>

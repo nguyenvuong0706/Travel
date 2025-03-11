@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Meaps Travels</title>
+
+    <!-- tab logo -->
+    <link rel="icon" type="image/x-icon" href="/image/Logo.png">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- bootstrap cdn link --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- swiper js cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- home page event section's icon cdn link  -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'> 
+   
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/cart.css">
+
+</head>
+<body>
+    
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-hiking"></i> MeapsTravel. </a>
+
+    <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
+        <a href="index.html">Home</a>
+        <a href="tour.html">Tour</a>
+        <a href="map.html">Map</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="events.html">Events</a>   
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+        <div id="search-btn" class="fas fa-search"></div>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- search form  -->
+
+<div class="search-form">
+
+    <div id="close-search" class="fas fa-times"></div>
+
+    <form action="">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+</div>
+
+
+    <!-- ---------------------------banner -->
+<div class="banner-area"></div>
+
+<!-- cart star -->
+<section id="cartt" class="h-100 h-custom">
+    <div class="container h-100 py-5">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+  
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Tour</th>
+                  <th scope="col">ID</th>
+                  <th scope="col">Tour</th>
+                  <th scope="col">Giá</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex align-items-center">
+                      <img src="/image/Ban-Gioc-waterfall-in-Cao-Bang_733724497.jpg" class="img-fluid rounded-3"
+                        style="width: 120px;">
+                      <div class="flex-column ms-4">
+                        <p>DU LỊCH THAM QUAN CAO BẰNG - THÁC BẢN GIỐC</p>
+                      </div>
+                    </div>
+                  </th>
+                  <td class="align-middle">
+                    <p class="mb-0" style="font-weight: 500;">SG001</p>
+                  </td>
+                  <td class="align-middle">
+                    <div class="d-flex flex-row">
+                      <button class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                        <i class="fas fa-minus"></i>
+                      </button>
+  
+                      <input id="form1" min="0" name="quantity" value="2" type="number"
+                        class="form-control form-control-sm" style="font-size: 20px; width: 50px;" />
+  
+                      <button class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+                  </td>
+                  <td class="align-middle">
+                    <p class="mb-0" style="font-weight: 500;">$790</p>
+                  </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                      <div class="d-flex align-items-center">
+                        <img src="/image/phu-quoc-beach_1031797879.jpg" class="img-fluid rounded-3"
+                          style="width: 120px;">
+                        <div class="flex-column ms-4">
+                          <p>DU LỊCH HẠ LONG - PHÚ QUỐC</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle">
+                      <p class="mb-0" style="font-weight: 500;">MT023</p>
+                    </td>
+                    <td class="align-middle">
+                      <div class="d-flex flex-row">
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                        </button>
+    
+                        <input id="form1" min="0" name="quantity" value="2" type="number"
+                          class="form-control form-control-sm" style="font-size: 20px; width: 50px;" />
+    
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0" style="font-weight: 500;">$790</p>
+                    </td>
+                  </tr>
+
+
+
+                  <tr>
+                    <th scope="row">
+                      <div class="d-flex align-items-center">
+                        <img src="/image/lungcu.jpg" class="img-fluid rounded-3"
+                          style="width: 120px;">
+                        <div class="flex-column ms-4">
+                          <p>DU LỊCH HÀ NỘI - HÀ GIANG - CAO NGUYÊN ĐÁ ĐỒNG VĂN</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle">
+                      <p class="mb-0" style="font-weight: 500;">SG001</p>
+                    </td>
+                    <td class="align-middle">
+                      <div class="d-flex flex-row">
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                        </button>
+    
+                        <input id="form1" min="0" name="quantity" value="2" type="number"
+                          class="form-control form-control-sm" style="font-size: 20px; width: 50px;" />
+    
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0" style="font-weight: 500;">$790</p>
+                    </td>
+                  </tr>
+                
+
+
+              </tbody>
+            </table>
+          </div>
+  
+          <div class="card shadow-2-strong mb-5 mb-lg-0" style="border-radius: 16px;">
+            <div class="card-body p-4">
+  
+              <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-md-0">
+                  <form>
+                    <div class="d-flex flex-row pb-3">
+                      <div class="d-flex align-items-center pe-2">
+                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1v"
+                          value="" aria-label="..." checked />
+                      </div>
+                      <div class="rounded border w-100 p-3">
+                        <p class="d-flex align-items-center mb-0">
+                          <i class="fab fa-cc-mastercard fa-2x text-dark pe-2"></i>Credit
+                          Card
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row pb-3">
+                      <div class="d-flex align-items-center pe-2">
+                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel2v"
+                          value="" aria-label="..." />
+                      </div>
+                      <div class="rounded border w-100 p-3">
+                        <p class="d-flex align-items-center mb-0">
+                          <i class="fab fa-cc-visa fa-2x fa-lg text-dark pe-2"></i>Debit Card
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                      <div class="d-flex align-items-center pe-2">
+                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel3v"
+                          value="" aria-label="..." />
+                      </div>
+                      <div class="rounded border w-100 p-3">
+                        <p class="d-flex align-items-center mb-0">
+                          <i class="fab fa-cc-paypal fa-2x fa-lg text-dark pe-2"></i>PayPal
+                        </p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-6">
+                  <div class="row">
+                    <div class="col-12 col-xl-6">
+                      <div class="form-outline mb-4 mb-xl-5">
+                        <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                          placeholder="Bui Quoc Viet" />
+                        <label class="form-label" for="typeName">Name on card</label>
+                      </div>
+  
+                      <div class="form-outline mb-4 mb-xl-5">
+                        <input type="text" id="typeExp" class="form-control form-control-lg" placeholder="MM/YY"
+                          size="7" id="exp" minlength="7" maxlength="7" />
+                        <label class="form-label" for="typeExp">Expiration</label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                      <div class="form-outline mb-4 mb-xl-5">
+                        <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                          placeholder="1111 2222 3333 4444" minlength="19" maxlength="19" />
+                        <label class="form-label" for="typeText">Card Number</label>
+                      </div>
+  
+                      <div class="form-outline mb-4 mb-xl-5">
+                        <input type="password" id="typeText" class="form-control form-control-lg"
+                          placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                        <label class="form-label" for="typeText">Cvv</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-xl-3">
+                  <div class="d-flex justify-content-between" style="font-weight: 500;">
+                    <p class="mb-2">Subtotal</p>
+                    <p class="mb-2">$9999</p>
+                  </div>
+  
+                  <div class="d-flex justify-content-between" style="font-weight: 500;">
+                    <p class="mb-0">Voucher</p>
+                    <p class="mb-0">$49.99</p>
+                  </div>
+  
+                  <hr class="my-4">
+  
+                  <div class="d-flex justify-content-between mb-4" style="font-weight: 500;">
+                    <p class="mb-2">Total (tax included)</p>
+                    <p class="mb-2">$9949.01</p>
+                  </div>
+  
+                  <button type="button" class="btn btn-primary btn-block btn-lg">
+                    <div class="d-flex justify-content-between">
+                      <p>Thanh Toán </p>
+                    </div>
+                  </button>
+  
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- cart end -->
+
+
+
+
+
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+
+<footer>
+    
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container1 my-5">
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-dark"
+          style="background-color: #ECEFF1"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-between p-4 text-white"
+             style="background-color: #219150"
+             >
+      <!-- Left -->
+      <div class="me-5">
+        <span>connected </span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container1 text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <a href="#" class="logo1"> <i style="color: #219150;" class="fas fa-hiking"></i> MeapsTravel. </a>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Danh mục</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-dark">Tour trong nước</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Tour nước ngoài</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Thuê xe</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Mua bảo hiểm du lịch</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">tiện ích</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-dark">MeapsTravel.</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Góp ý</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Voucher</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Liên hệ</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p><i class="fas fa-home mr-3"></i> Bãi Cháy, Hạ Long Quảng Ninh</p>
+            <p><i class="fas fa-envelope mr-3"></i> MeapsTravel@example.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  </footer>
+  <!-- Footer -->
+<!-- End of .container -->
+
+</footer>
+</html>
+

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>ADM - New Booking</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/tours.css" />
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <a style="color: black;" href="#"> <i class="fa-solid fa-person-walking-luggage"></i> MeapsTravel. </a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="">
+          <i class="bx bx-user"></i>
+          <span class="links_name">Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class="bx bx-grid-alt"></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="tours.html" class="active">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Tours</span>
+        </a>
+      </li>
+      <li>
+        <a href="events.html">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Events</span>
+        </a>
+      </li>
+      <li>
+        <a href="maps.html">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Maps</span>
+        </a>
+      </li>
+      <li>
+        <a href="blogs.html">
+          <i class="bx bx-list-ul"></i>
+          <span class="links_name">Blogs</span>
+        </a>
+      </li>
+      <li class="log_out">
+        <a href="#">
+          <i class="bx bx-log-out"></i>
+          <span class="links_name">Log out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+    <section class="home-section">
+        <nav>
+          <div class="sidebar-button">
+            <i class="bx bx-menu sidebarBtn"></i>
+            <span class="dashboard">Dashboard</span>
+          </div>
+          <div class="profile-details">
+            <img src="images/profile.jpg" alt="" />
+            <span class="admin_name">Admin name</span>
+            <i class="bx bx-chevron-down"></i>
+          </div>
+        </nav>
+      <!-- table -->
+      <main class="table">
+        <div class="body-content flex flex-column">
+
+          <main class="flex flex-column gap-3 grow">
+            <section class="flex gap-2 items-center justify-between">
+              <div id="bulkActions" class="bulk-actions hidden items-center">
+                <i class="icon">
+                  <i class="bx bx-trash"></i>
+                </i>
+        
+                <small id="labelItemsSelected">0 items selected</small>
+        
+                <i class="icon">
+                  <i class="bx bx-x"></i>
+                </i>
+              </div>
+        
+              <h1 id="title" class="leading-none">Danh sách Tours<br>
+                <span>Hiện có tổng 123 tour mới.</span>
+              </h1>
+        
+              <div class="flex items-center">
+                <button class="button icon link">
+                  <i class="bx bx-search"></i>
+                </button>
+                <button class="button icon link action">
+                  <i class="bx bx-filter-alt"></i>
+                  <div class="action-menu filter">
+                    <ul>
+                      <li>
+                        <div class="select-box">
+                          <select>
+                            <option hidden>Danh sách</option>
+                            <option>Trạng thái</option>
+                            <option>Hoạt động</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li class="duration">
+                        <div class="option-1">
+                          <input type="radio" id="weekly" name="duration" value="weekly">
+                          <label for="weekly">Theo Tuần</label>
+                        </div>
+                        <div class="option-2">
+                          <input type="radio" id="monthly" name="duration" value="monthly">
+                          <label for="monthly">Theo Tháng</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </button>
+              </div>
+            </section>
+        
+            <section class="flex flex-column gap-2">
+              <table>
+                <tr class="no-hover">
+                  <th></th>
+                  <th><span>No.</span></th>
+                  <th><span>Hotline</span></th>
+                  <th><span>Tên Tour</span></th>
+                  <th><span>Email</span></th>
+                  <th><span>Quốc gia</span></th>
+                  <th><span>Giá tiền</span></th>
+                  <th><span>Hành động</span></th>
+                </tr>
+        
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>1</td>
+                  <td>(839) 569-2112</td>
+                  <td>Sun World Ba Na Hills in Da Nang</td>
+                  <td>chadengle@dummy.com</td>
+                  <td>Việt Nam</td>
+                  <td>5.490.000₫ </td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu table">
+                        <ul>
+                            <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                            <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                            <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+        
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>2</td>
+                  <td>(666) 736-1467</td>
+                  <td>Đà Nẵng - Bà Nà - Cầu Vàng - Hội An - Huế</td>
+                  <td>dmiller@aol.com</td>
+                  <td>Việt Nam</td>
+                  <td>7.290.000₫</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu">
+                        <ul>
+                          <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                          <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                          <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+        
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>3</td>
+                  <td>(497) 411-1220</td>
+                  <td>Động Phong Nha & Thiên Đường - Hà Nội</td>
+                  <td>dmiller@aol.com</td>
+                  <td>Việt Nam</td>
+                  <td>+5.990.000₫</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu">
+                        <ul>
+                          <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                          <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                          <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+        
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>4</td>
+                  <td>(321) 517-6415</td>
+                  <td>Hà Nội - Sapa - Fansipan - Ninh Bình - Tràng An</td>
+                  <td>sjmuir@gmail.com</td>
+                  <td>Việt Nam</td>
+                  <td>12.690.000₫</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu">
+                        <ul>
+                          <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                          <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                          <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+        
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>5</td>
+                  <td>(774) 783-8199</td>
+                  <td>Hà Nội - Hạ Long - Yên Tử - Ninh Bình - Bái Đính - Tràng An</td>
+                  <td>zeitlin@comcast.net</td>
+                  <td>Việt Nam</td>
+                  <td>8.690.000₫</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu">
+                        <ul>
+                          <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                          <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                          <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>6</td>
+                  <td>(751) 647-0356</td>
+                  <td>Hà Giang - Lũng Cú - Đồng Văn - Mã Pí Lèng - Mèo Vạc</td>
+                  <td>bradl@outlook.com</td>
+                  <td>Việt Nam</td>
+                  <td>10.090.000₫</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu">
+                        <ul>
+                          <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                          <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                          <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input class="input checkbox" type="checkbox" /></td>
+                  <td>7</td>
+                  <td>(634) 982-6026</td>
+                  <td>Sapa - Fansipan - Vịnh Hạ Long - Động Thiên Cung</td>
+                  <td>uqmcolyv@aol.com</td>
+                  <td>Việt Nam</td>
+                  <td>10.999.000đ</td>
+                  <td class="action">
+                    <i class="bx bx-dots-horizontal-rounded detail"></i>
+                    <div class="action-menu">
+                        <ul>
+                          <li><i class='bx bxs-message-square-detail' id="det"></i> Detail</li>
+                          <li><i class='bx bxs-message-square-edit' id="edt"></i> Edit</li>
+                          <li><i class='bx bxs-message-square-x' id="del"></i> Delete</li>
+                        </ul>
+                    </div>
+                  </td>
+                </tr>
+        
+              </table>
+        
+              <section class="flex items-center justify-between">
+                <small class="muted">1-7 / 123 items</small>
+        
+                <div class="flex gap-2 items-center">
+                  <div class="flex gap-05 items-center">
+                    <input class="input number small" readonly type="number" value="1" />
+                    <small class="muted">/</small>
+                    <small class="muted">13 pages</small>
+                  </div>
+        
+                  <div class="flex gap-05 items-center">
+                    <button class="button icon link">
+                      <i class="bx bx-chevron-left"></i>
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+
+                  </div>
+                </div>
+              </section>
+            </section>
+          </main>
+        </div>
+      </main>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

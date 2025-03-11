@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ADM - Admin Dashboard</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/dashboard.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <a style="color: black;" href="#"> <i class="fa-solid fa-person-walking-luggage"></i> MeapsTravel. </a>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="">
+            <i class="bx bx-user"></i>
+            <span class="links_name">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="index.html" class="active">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="tours.html">
+            <i class="bx bx-list-ul"></i>
+            <span class="links_name">Tours</span>
+          </a>
+        </li>
+        <li>
+          <a href="events.html">
+            <i class="bx bx-list-ul"></i>
+            <span class="links_name">Events</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#">
+            <i class="bx bx-log-out"></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <nav>
+        <div class="sidebar-button">
+          <i class="bx bx-menu sidebarBtn"></i>
+          <span class="dashboard">Dashboard</span>
+        </div>
+        <div class="profile-details">
+          <img src="images/profile.jpg" alt="" />
+          <span class="admin_name">Travel Agency name</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+      </nav>
+
+      <div class="home-content">
+        <div class="overview-boxes">
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Tour mới</div>
+              <div class="number">408</div>
+              <div class="indicator">
+                <i class="bx bx-up-arrow-alt"></i>
+                <span class="text">Cập nhật hôm qua</span>
+              </div>
+            </div>
+            <i class="bx bxs-cart-add cart two"></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Số người đặt</div>
+              <div class="number">4,757</div>
+              <div class="indicator">
+                <i class="bx bx-up-arrow-alt"></i>
+                <span class="text">Cập nhật hôm qua</span>
+              </div>
+            </div>
+            <i class="bx bx-cart-alt cart"></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Tổng doanh thu</div>
+              <div class="number">$217.00</div>
+              <div class="indicator">
+                <i class="bx bx-up-arrow-alt"></i>
+                <span class="text">Cập nhật hôm qua</span>
+              </div>
+            </div>
+            <i class="bx bx-cart cart three"></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Số người đã thêm</div>
+              <div class="number">2,390</div>
+              <div class="indicator">
+                <i class="bx bx-down-arrow-alt down"></i>
+                <span class="text">Cập nhật hôm nay</span>
+              </div>
+            </div>
+            <i class="bx bxs-cart-download cart four"></i>
+          </div>
+        </div>
+      </div>
+
+    <!-- calendar -->
+      <div class="book-now">
+        <div class="calendar">
+          <div class="calendar-title">
+            <p>Bảng đặt Tour</p>
+            <div class="month">
+              <i class="bx bxs-chevron-left"></i>
+              <p>August 2023</p>
+              <i class="bx bxs-chevron-right"></i>
+            </div>
+          </div>
+          
+          <ul class="days">  
+            <ul class="weekdays">
+              <li>Mo</li>
+              <li>Tu</li>
+              <li>We</li>
+              <li>Th</li>
+              <li>Fr</li>
+              <li>Sa</li>
+              <li>Su</li>
+            </ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li><span class="active">10</span></li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+          </ul>
+        </div>
+        <div class="booked">
+          <div class="book-client">
+            <img src="images/lang-chu-tich.jpg" alt="">
+            <div class="client-text">
+              <h3>Lăng Chủ tịch Hồ Chí Minh</h3>
+              <h4>Hà Nội</h4>
+              <p>Miễn phí</p>
+            </div>
+          </div>
+          <div class="book-client">
+            <img src="images/beryl-palace-hanoi-hotel_lobby-3_optimized-scaled.jpg" alt="">
+            <div class="client-text">
+              <h3>Beryl Palace Hotel</h3>
+              <h4>Hà Nội</h4>
+              <p>1.629.440đ</p>
+            </div>
+          </div>
+          <div class="book-client">
+            <img src="images/golden-rose.jpg" alt="">
+            <div class="client-text">
+              <h3>Golden Rose Hotel</h3>
+              <h4>Đà Nẵng</h4>
+              <p>350.000đ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".sidebarBtn");
+      sidebarBtn.onclick = function () {
+        sidebar.classList.toggle("active");
+        if (sidebar.classList.contains("active")) {
+          sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+      };
+    </script>
+  </body>
+</html>
